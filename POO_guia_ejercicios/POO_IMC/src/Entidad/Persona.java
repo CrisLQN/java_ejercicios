@@ -58,7 +58,5 @@ public class Persona {
     public double getAltura() {
         return altura;
     }
-    
-    
 
 }
