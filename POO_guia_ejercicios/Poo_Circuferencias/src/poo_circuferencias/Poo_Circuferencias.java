@@ -1,15 +1,16 @@
 package poo_circuferencias;
 
+import Entidades.circuferenciaEntidades;
 import Servicios.circuferenciaServicios;
 
 public class Poo_Circuferencias {
 
     public static void main(String[] args) {
-        
-        System.out.println();
-        circuferenciaServicios.crearCircuferencia()
-        
-        System.out.println(circuferenciaServicios.perimetro());
+
+        circuferenciaServicios circuferenciaServ = new circuferenciaServicios();
+        circuferenciaEntidades circuferencia = circuferenciaServ.crearCircuferencia();
+        System.out.println("La area es " + circuferenciaServ.area(circuferencia));
+        System.out.println("El perimetro es "+circuferenciaServ.perimetro(circuferencia));
     }
 
 }
