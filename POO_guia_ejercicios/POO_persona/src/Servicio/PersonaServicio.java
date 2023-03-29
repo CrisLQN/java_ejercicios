@@ -8,9 +8,9 @@ public class PersonaServicio {
 
     Scanner leer = new Scanner(System.in);
     Persona persona = new Persona();
-    Date fechaNacimiento=new Date();
-    Date fechaActual=new Date();
-   
+    Date fechaNacimiento = new Date();
+    Date fechaActual = new Date();
+
     public Persona crearPersona() {
         System.out.println("Ingrese nombre");
         persona.setNombre(leer.nextLine());
@@ -21,10 +21,15 @@ public class PersonaServicio {
         persona.setFechaNacimiento(fechaNacimiento);
         return persona;
     }
-    
-    public int calcularEdad(){
-    
-    return 0;
+
+    public int calcularEdad(Date fechaNacimiento, Date fechaActual) {
+        if (fechaNacimiento.getMonth() < fechaActual.getMonth()) {
+            return (fechaActual.getYear() - fechaNacimiento.getYear()) - 1;
+        } else if (fechaNacimiento.getDate() < fechaActual.getMonth()) {
+            return (fechaActual.getYear() - fechaNacimiento.getYear()) - 1;
+        }else {
+            return fechaActual.getYear() - fechaNacimiento.getYear();
+        }
     }
-    
+
 }

@@ -18,7 +18,14 @@ public class Date_main {
         Date fechaActual = new Date();
         System.out.println("Fecha ingresada= " + fecha);
         System.out.println("Fecha actual= " + fechaActual);
+        if (fecha.getMonth() < fechaActual.getMonth()) {
+            System.out.println("la diferencia entre ambos años es " + ((fechaActual.getYear() - fecha.getYear()) - 1));
+        } else if (fecha.getDate() < fechaActual.getDate()) {
+            System.out.println("la diferencia entre ambos años es " + ((fechaActual.getYear() - fecha.getYear()) - 1));
+        }else {
         System.out.println("la diferencia entre ambos años es " + (fechaActual.getYear() - fecha.getYear()));
+        }
+
     }
 
 }
