@@ -3,24 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package prueba;
+package poo_raices;
 
-import java.util.Scanner;
+import Entidad.Raices;
+import Servicio.RaicesServicio;
 
 /**
  *
  * @author cris-
  */
-public class Prueba {
+public class POO_raices {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      int entero=5;
-    
-        System.out.println("suma "+(-entero*(-2)));
-
+        RaicesServicio raizServ = new RaicesServicio();
+        Raices raizUno = new Raices(1, -4, 4);
+        raizServ.calcular(raizUno);
     }
 
 }
