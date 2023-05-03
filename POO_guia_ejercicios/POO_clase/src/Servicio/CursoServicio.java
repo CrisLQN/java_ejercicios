@@ -44,9 +44,9 @@ public class CursoServicio {
         curso.setAlumnos(cargarAlumnos());
         return curso;
     }
-    
-    public double calcularGananciaSemanal(Curso curso){
-    
-    return ((curso.getPrecioPorHora()*curso.getCantidadHorasPorDia())*curso.getCantidadDiasPorSemana())*5;
+
+    public double calcularGananciaSemanal(Curso curso) {
+
+        return ((curso.getPrecioPorHora() * curso.getCantidadHorasPorDia()) * curso.getCantidadDiasPorSemana()) * 5;
     }
 }
