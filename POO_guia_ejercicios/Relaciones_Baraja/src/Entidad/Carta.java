@@ -19,9 +19,8 @@ public class Carta {
     public Carta() {
     }
 
-    public Carta(int numero, String palo) {
+    public Carta(int numero) {
         this.numero = numero;
-        this.palo = palo;
     }
 
     public void setNumero(int numero) {
@@ -45,19 +44,6 @@ public class Carta {
         return "Carta{" + "numero= " + numero + ", palo= " + palo + '}';
     }
 
-    public static Comparator<Carta> aleatorio = new Comparator<Carta>() {
-        @Override
-        public int compare(Carta p1, Carta p2) {
-            double random=Math.random();
-            
-            if (random<0.33) {
-                return 1;
-            }
-            if (random<0.66) {
-                return -1;
-            }
-            return 0;
-        }
-    };
+
 
 }
