@@ -9,8 +9,10 @@ package Entidad;
  *
  * @author cris-
  */
-public interface Animal {
-    
-    public abstract void alimentarse();
+public interface Edificio {
+
+    public abstract double calcularSuperficie(Edificio e);
+
+    public abstract double calcularVolumen(Edificio e);
 
 }

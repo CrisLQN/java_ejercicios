@@ -5,12 +5,14 @@
  */
 package Entidad;
 
-/**
- *
- * @author cris-
- */
-public interface Animal {
-    
-    public abstract void alimentarse();
+public interface CalculoFormas {
+
+    public final double PI = Math.PI;
+
+    public double CalcularArea();
+
+    public double CalcularPerimetro();
 
 }
+
+

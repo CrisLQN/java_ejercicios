@@ -9,7 +9,7 @@ package Entidad;
  *
  * @author cris-
  */
-    public class Perro extends Animal {
+    public class Perro extends AbstractAnimal {
 
     public Perro(String nombre,String alimento,int edad,String raza) {
         super(nombre,alimento,edad,raza);

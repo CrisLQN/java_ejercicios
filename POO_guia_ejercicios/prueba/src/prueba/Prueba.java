@@ -5,10 +5,9 @@
  */
 package prueba;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.util.Scanner;
+import java.util.Date;
+
+
 
 /**
  *
@@ -20,15 +19,26 @@ public class Prueba {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int veces=1;
-        for (int i = 2; i < 128; i*=2) {
-            
-            System.out.println("i "+i);
-            veces+=1;
-            System.out.println("i se ha ejecutado "+ veces+" veces");
-        }
+        Date hoy= new Date();
+          long ayer =hoy.getTime()/ (24 * 60 * 60 * 1000);
+          hoy.setMonth(5);
+          long hoi=hoy.getTime()/ (24 * 60 * 60 * 1000);
+        System.out.println(hoi-ayer);
+        
+  
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     public static String incrementString(String str) {
 
         if (str.subSequence(str.length() - 1, str.length()).getClass().equals(String.class)) {

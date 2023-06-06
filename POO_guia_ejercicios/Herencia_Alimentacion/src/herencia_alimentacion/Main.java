@@ -5,6 +5,7 @@
  */
 package herencia_alimentacion;
 
+import Entidad.AbstractAnimal;
 import Entidad.Animal;
 import Entidad.Caballo;
 import Entidad.Gato;
